@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAF</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="integrale.js" defer></script>
+</head>
+<body>
+    <!-- Mon titre H1 -->
+    <h1>Social Media App</h1>
+    <!-- Mon plan de travail -->
+    <div class="container">
+        <!-- brique sur le le côté gauche de mon plan -->
+        <div class="left">
+            <form id="form">
+                <label for="post">Ecrivez votre tâche ici</label>
+                <textarea name="post" id="input" cols="30" rows="10"></textarea>
+                <br><br>
+                <div id="msg"></div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        <!-- brique sur le le côté droit de mon plan  -->
+         <div class="right">
+            <h3>Toutes mes taches</h3>
+            <div id="posts">
+                <div>
+                    <p>C'est mon 1er poste</p>
+                    <span class="options">
+                        <!-- <i class =""><i/> -->
+                        <!-- <i class ="fas fa-trash-alt"><i/> l'icone du début-->
+                        <i onClick="editPost(this)" class ="fas fa-edit"></i>
+                        <i onClick="deletePost(this) " class ="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+                <div>
+                    <p>C'est mon 2nd poste</p>
+                    <span class="options">
+                    <!-- <i class =""><i/> -->
+                    <!-- <i class ="fas fa-trash-alt"><i/> l'icone du début-->
+                    <i onClick="editPost(this)" class ="fas fa-edit"></i>
+                    <i onClick="deletePost(this) " class ="fas fa-trash-alt"></i>x  
+                    <!-- <img src="chat_bubble_message_contact_icon_264231.png" style="height: 10px; width:20px;" alt=""> -->
+                   </span>
+                </div>
+            </div>
+         </div>
+    </div>
+    <script src="integrale.js"></script>
+</body>
+</html>
+
+
+
+
+
+
